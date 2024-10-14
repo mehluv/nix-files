@@ -35,10 +35,10 @@
       enableWidevine = true;
     })
     keepassxc
-  #  thunderbird
   ];
 
   environment.systemPackages = with pkgs; [
     wget
+    lshw
   ];
 }

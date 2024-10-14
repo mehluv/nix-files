@@ -22,6 +22,8 @@
       # ./gnome.nix
       # Keep the general drivers here
       ./general-drivers.nix
+      # Keep all nvidia settings here
+      ./nvidia.nix
       # Set shell settings here
       ./set-shell.nix
       # Keep your text editors here
@@ -36,7 +38,6 @@
       layout = "us";
       variant = "";
     };
-    videoDrivers = [ "nvidia" ];
   };
 
   # Keeping this here so there's no confusion elsewhere when I add user-level packages
