@@ -40,5 +40,6 @@
   environment.systemPackages = with pkgs; [
     wget
     lshw
+    unzip
   ];
 }
