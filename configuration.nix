@@ -28,6 +28,10 @@
       ./set-shell.nix
       # Keep your text editors here
       ./text-editors.nix
+      # Keep your fonts here
+      ./fonts.nix
+      # Keep Nix's garbage collection here
+      ./gc.nix
       # Keep the rest of your uncategorized installables here
       ./packages.nix
     ];
@@ -45,12 +49,6 @@
     isNormalUser = true;
     description = "Luv";
     extraGroups = [ "networkmanager" "wheel" ];
-  };
-
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 1w";
   };
 
   # This value determines the NixOS release from which the default
